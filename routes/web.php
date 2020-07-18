@@ -35,3 +35,7 @@ Route::get("/calculator/{num1}/{num2}/{num3}", 'HomeController@calculator');
 Route::get('/user', 'userController@index');
 Route::get('/user/show/{id}', 'userController@show');
 Route::get('/user/show/update/{id}', 'userController@update');
+
+Route::get('/todo', 'TodoController@index');
+Route::get('/todo/show/{id}', 'TodoController@show');
+Route::get('/todo/delete/{id}', 'TodoController@delete');
